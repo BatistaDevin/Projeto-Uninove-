@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "44590678179",
+    "project_id": "uniorganization-fd7be",
+    "storage_bucket": "uniorganization-fd7be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44590678179:android:98c142c334ed93194aff16",
+        "android_client_info": {
+          "package_name": "com.example.rhapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcO4fwLi8OkUFN5xePt0Hiq6Bh-t3i05k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

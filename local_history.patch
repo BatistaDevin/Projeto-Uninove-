@@ -1,0 +1,365 @@
+Index: app/src/main/res/layout/values/styles.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/values/styles.xml b/app/src/main/res/layout/values/styles.xml
+new file mode 100644
+--- /dev/null	(date 1710888524302)
++++ b/app/src/main/res/layout/values/styles.xml	(date 1710888524302)
+@@ -0,0 +1,39 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <style name="containerComponents">
++        <item name="android:layout_width">match_parent</item>
++        <item name="android:layout_height">250dp</item>
++        <item name="android:background">@drawable/container_components</item>
++        <item name="android:layout_margin">20dp</item>
++
++    </style>
++
++    <style name="Edit_Text">
++        <item name="android:layout_width">match_parent</item>
++        <item name="android:layout_height">wrap_content</item>
++        <item name="android:background">@drawable/edit_text</item>
++        <item name="android:padding">20dp</item>
++        <item name="android:maxLength">25</item>
++        <item name="android:layout_marginLeft">40dp</item>
++        <item name="android:layout_marginRight">40dp</item>
++        <item name="android:layout_marginTop">15dp</item>
++
++    </style>
++
++     <style name="Button">
++         <item name="android:layout_width">match_parent</item>
++         <item name="android:layout_height">wrap_content</item>
++         <item name="android:layout_marginLeft">40dp</item>
++         <item name="android:layout_marginRight">40dp</item>
++         <item name="android:layout_marginTop">15dp</item>
++         <item name="android:padding">20dp</item>
++         <item name="android:textColor">@color/white</item>
++         <item name="android:textSize">20sp</item>
++         <item name="android:textStyle">bold</item>
++         <item name="textAllCaps">false</item>
++         <item name="android:background">@drawable/button</item>
++
++     </style>
++
++</resources>
++
+Index: app/src/main/res/layout/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/values/themes.xml b/app/src/main/res/layout/values/themes.xml
+new file mode 100644
+--- /dev/null	(date 1710127664584)
++++ b/app/src/main/res/layout/values/themes.xml	(date 1710127664584)
+@@ -0,0 +1,9 @@
++<resources xmlns:tools="http://schemas.android.com/tools">
++    <!-- Base application theme. -->
++    <style name="Base.Theme.Rhapp" parent="Theme.Material3.DayNight.NoActionBar">
++        <!-- Customize your light theme here. -->
++        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
++    </style>
++
++    <style name="Theme.Rhapp" parent="Base.Theme.Rhapp" />
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/values/strings.xml b/app/src/main/res/layout/values/strings.xml
+new file mode 100644
+--- /dev/null	(date 1710899027456)
++++ b/app/src/main/res/layout/values/strings.xml	(date 1710899027456)
+@@ -0,0 +1,8 @@
++<resources>
++    <string name="app_name">rh.app</string>
++    <string name="entrar">Entrar</string>
++    <string name="text_cadastro">Crie uma conta clicando aqui</string>
++    <string name="title_cadastro">Cadastre-se</string>
++    <string name="google_api_key">AIzaSyACA3RtdumXlzJ_rxDmpKRrXV0j6lYOXHc</string>
++    <string name="title_activity_maps">MapsActivity</string>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_agenda.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_agenda.xml b/app/src/main/res/layout/activity_agenda.xml
+new file mode 100644
+--- /dev/null	(date 1710902411397)
++++ b/app/src/main/res/layout/activity_agenda.xml	(date 1710902411397)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".Agenda">
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout/activity_main.xml	
++++ /dev/null	
+@@ -1,18 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    tools:context=".MainActivity">
+-
+-    <TextView
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:text="Hello World!"
+-        app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
+-
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/values-night/string.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values-night/string.xml b/app/src/main/res/values-night/string.xml
+new file mode 100644
+--- /dev/null	(date 1710902235555)
++++ b/app/src/main/res/values-night/string.xml	(date 1710902235555)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <string name="app_name" translatable="false">Projeto Firebase</string>
++    <string name="entrar" translatable="false">Entrar</string>
++    <string name="text_cadastro" translatable="false">Crie uma conta clicando aqui</string>
++    <string name="title_cadastro">Cadastre-se</string>
++
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/values-night/styles.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values-night/styles.xml b/app/src/main/res/values-night/styles.xml
+new file mode 100644
+--- /dev/null	(date 1710902037188)
++++ b/app/src/main/res/values-night/styles.xml	(date 1710902037188)
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++
++    <style name="Button">
++        <item name="android:layout_width">match_parent</item>
++        <item name="android:layout_height">wrap_content</item>
++        <item name="android:layout_marginLeft">40dp</item>
++        <item name="android:layout_marginRight">40dp</item>
++        <item name="android:layout_marginTop">150dp</item>
++        <item name="android:padding">20dp</item>
++        <item name="android:textColor">@color/white</item>
++        <item name="android:textSize">20sp</item>
++        <item name="android:textStyle">bold</item>
++        <item name="textAllCaps">false</item>
++        <item name="background">@drawable/button</item>
++    </style>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/values/styles.xml
+===================================================================
+diff --git a/app/src/main/res/values/styles.xml b/app/src/main/res/values/styles.xml
+deleted file mode 100644
+--- a/app/src/main/res/values/styles.xml	
++++ /dev/null	
+@@ -1,39 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<resources>
+-    <style name="containerComponents">
+-        <item name="android:layout_width">match_parent</item>
+-        <item name="android:layout_height">250dp</item>
+-        <item name="android:background">@drawable/container_components</item>
+-        <item name="android:layout_margin">20dp</item>
+-
+-    </style>
+-
+-    <style name="Edit_Text">
+-        <item name="android:layout_width">match_parent</item>
+-        <item name="android:layout_height">wrap_content</item>
+-        <item name="android:background">@drawable/edit_text</item>
+-        <item name="android:padding">20dp</item>
+-        <item name="android:maxLength">25</item>
+-        <item name="android:layout_marginLeft">40dp</item>
+-        <item name="android:layout_marginRight">40dp</item>
+-        <item name="android:layout_marginTop">15dp</item>
+-
+-    </style>
+-
+-     <style name="Button">
+-         <item name="android:layout_width">match_parent</item>
+-         <item name="android:layout_height">wrap_content</item>
+-         <item name="android:layout_marginLeft">40dp</item>
+-         <item name="android:layout_marginRight">40dp</item>
+-         <item name="android:layout_marginTop">15dp</item>
+-         <item name="android:padding">20dp</item>
+-         <item name="android:textColor">@color/white</item>
+-         <item name="android:textSize">20sp</item>
+-         <item name="android:textStyle">bold</item>
+-         <item name="textAllCaps">false</item>
+-         <item name="android:background">@drawable/button</item>
+-
+-     </style>
+-
+-</resources>
+-
+Index: app/src/main/res/values/themes.xml
+===================================================================
+diff --git a/app/src/main/res/values/themes.xml b/app/src/main/res/values/themes.xml
+deleted file mode 100644
+--- a/app/src/main/res/values/themes.xml	
++++ /dev/null	
+@@ -1,9 +0,0 @@
+-<resources xmlns:tools="http://schemas.android.com/tools">
+-    <!-- Base application theme. -->
+-    <style name="Base.Theme.Rhapp" parent="Theme.Material3.DayNight.NoActionBar">
+-        <!-- Customize your light theme here. -->
+-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+-    </style>
+-
+-    <style name="Theme.Rhapp" parent="Base.Theme.Rhapp" />
+-</resources>
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+deleted file mode 100644
+--- a/app/src/main/res/values/strings.xml	
++++ /dev/null	
+@@ -1,6 +0,0 @@
+-<resources>
+-    <string name="app_name">rh.app</string>
+-    <string name="entrar">Entrar</string>
+-    <string name="text_cadastro">Crie uma conta clicando aqui</string>
+-    <string name="title_cadastro">Cadastre-se</string>
+-</resources>
+\ No newline at end of file
+Index: app/src/main/res/values/colors.xml
+===================================================================
+diff --git a/app/src/main/res/values/colors.xml b/app/src/main/res/values/colors.xml
+deleted file mode 100644
+--- a/app/src/main/res/values/colors.xml	
++++ /dev/null	
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<resources>
+-    <color name="black">#FF000000</color>
+-    <color name="white">#FFFFFFFF</color>
+-    <color name="blue_cl">#add8e6</color>
+-    <color name="blue">#0000FF</color>
+-    <color name="yellow">#ffff00</color>
+-</resources>
+\ No newline at end of file
+Index: app/src/main/java/com/example/rhapp/Agenda.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/rhapp/Agenda.java b/app/src/main/java/com/example/rhapp/Agenda.java
+new file mode 100644
+--- /dev/null	(date 1710900562984)
++++ b/app/src/main/java/com/example/rhapp/Agenda.java	(date 1710900562984)
+@@ -0,0 +1,14 @@
++package com.example.rhapp;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class Agenda extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_agenda);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	
++++ b/app/src/main/AndroidManifest.xml	(date 1710900944622)
+@@ -12,6 +12,24 @@
+         android:supportsRtl="true"
+         android:theme="@style/Theme.Rhapp"
+         tools:targetApi="31">
++        <activity
++            android:name=".Agenda"
++            android:exported="false" />
++        <!--
++             TODO: Before you run your application, you need a Google Maps API key.
++
++             To get one, follow the directions here:
++
++                https://developers.google.com/maps/documentation/android-sdk/get-api-key
++
++             Once you have your API key (it starts with "AIza"), define a new property in your
++             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
++             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
++        -->
++        <meta-data
++            android:name="com.google.android.geo.API_KEY"
++            android:value="YOUR_API_KEY" />
++
+         <activity
+             android:name=".TelaPrincipal"
+             android:exported="false" />
+Index: app/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+--- a/app/build.gradle.kts	
++++ b/app/build.gradle.kts	(date 1710900201741)
+@@ -1,5 +1,6 @@
+ plugins {
+     id("com.android.application")
++    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+ }
+ 
+ android {
+@@ -29,6 +30,9 @@
+         sourceCompatibility = JavaVersion.VERSION_1_8
+         targetCompatibility = JavaVersion.VERSION_1_8
+     }
++    buildFeatures {
++        viewBinding = true
++    }
+ }
+ 
+ dependencies {
+@@ -36,6 +40,7 @@
+     implementation("androidx.appcompat:appcompat:1.6.1")
+     implementation("com.google.android.material:material:1.11.0")
+     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
++    implementation("com.google.android.gms:play-services-maps:18.2.0")
+     testImplementation("junit:junit:4.13.2")
+     androidTestImplementation("androidx.test.ext:junit:1.1.5")
+     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

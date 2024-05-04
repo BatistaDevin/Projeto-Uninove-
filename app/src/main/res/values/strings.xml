@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">rh.app</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Crie uma conta clicando aqui</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="textViewIdProduto">ID do Produto</string>
+    <string name="text_produto">Cadastrar Produto</string>
+    <string name="deslogar">Deslogar</string>
+    <string name="senha">Senha</string>
+    <string name="nome">Nome</string>
+    <string name="e_mail">E-mail</string>
+</resources>
