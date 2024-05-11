@@ -4,9 +4,31 @@
     <string name="text_cadastro">Crie uma conta clicando aqui</string>
     <string name="title_cadastro">Cadastre-se</string>
     <string name="textViewIdProduto">ID do Produto</string>
-    <string name="text_produto">Cadastrar Produto</string>
+    <string name="bt_cadastrar_produto">Recebimento de Produtos</string>
     <string name="deslogar">Deslogar</string>
     <string name="senha">Senha</string>
     <string name="nome">Nome</string>
     <string name="e_mail">E-mail</string>
+    <string name="bt_cadastrar">Cadastrar</string>
+    <string name="app_title">Gerenciador de Produtos</string>
+    <string name="title_Produto">Controle de Estoque </string>
+
+    <!-- Strings usadas na classe MyHomePage -->
+
+        <string name="prompt_produto">Nome do Produto</string>
+        <string name="prompt_quantidade">Quantidade</string>
+        <string name="cadastrarButtonForm">Cadastrar Produto</string>
+        <string name="mostrarButtonForm">Mostrar Produtos</string>
+
+    <string name="menu_principal">MENU PRINCIPAL</string>
+    <string name="todos_os_produtos">Todos os Produtos</string>
+    <string name="cadastrar_produto">Cadastrar Produtos</string>
+    <string name="mostrar_todos_produtos">Mostrar Todos os Produtos</string>
+    <string name="editar_quantidade">Editar Quantidade</string>
+
+    <string name="quantidadeEditTextForm">Quantidade</string>
+
+    <string name="cancelar">Cancelar</string>
+    <string name="resultadoTextViewForm">Resultado</string>
+    <string name="produtoEditTextForm">Nome do produto</string>
 </resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormProdutos"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/cadastrar_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/cadastrar_produto"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <View
+        android:id="@+id/containerComponentes"
+        style="@style/containerComponents"
+        android:layout_width="391dp"
+        android:layout_height="511dp"
+        android:layout_below="@id/cadastrar_produto"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/produtoEditTextForm"
+        android:layout_width="match_parent"
+        style="@style/Edit_Text"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cadastrar_produto"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+       android:hint="@string/produtoEditTextForm"
+        android:minHeight="48dp"
+        />
+
+    <EditText
+        android:id="@+id/quantidadeEditTextForm"
+        style="@style/Edit_Text"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/produtoEditTextForm"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Quantidade"
+        android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/cadastrarButtonForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantidadeEditTextForm"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/cadastrarButtonForm"
+            android:textSize="17dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/mostrarButtonForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cadastrarButtonForm"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginBottom="16dp"
+            android:text="@string/mostrarButtonForm"
+            android:textSize="17dp"
+            android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/resultadoTextViewForm"
+        style="@style/Edit_Text"
+        android:layout_width="395dp"
+        android:layout_height="174dp"
+        android:layout_below="@id/mostrarButtonForm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/resultadoTextViewForm"
+        android:textColor="@color/black" />
+    </RelativeLayout>

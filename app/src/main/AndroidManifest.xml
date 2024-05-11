@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Rhapp"
         tools:targetApi="s">
         <activity
-            android:name=".FormeProdutos"
+            android:name=".FormProdutos"
             android:exported="true" />
         <activity
             android:name=".TelaPrincipal"
@@ -21,9 +21,6 @@
         <activity
             android:name=".FormeCadastro"
             android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
         <activity
             android:name=".FormLogin"
             android:exported="true">
