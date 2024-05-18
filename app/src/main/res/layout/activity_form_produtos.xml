@@ -4,20 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FormProdutos"
-    android:background="@drawable/background">
+    android:background="@drawable/ro">
 
 
     <TextView
         android:id="@+id/cadastrar_produto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="35dp"
         android:text="@string/cadastrar_produto"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        />
+        android:textStyle="bold" />
 
     <View
         android:id="@+id/containerComponentes"
@@ -27,67 +27,71 @@
         android:layout_below="@id/cadastrar_produto"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp" />
 
     <EditText
         android:id="@+id/produtoEditTextForm"
-        android:layout_width="match_parent"
         style="@style/Edit_Text"
-        android:textColor="@color/black"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/cadastrar_produto"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="41dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="10dp"
-       android:hint="@string/produtoEditTextForm"
+        android:drawableEnd="@android:drawable/ic_menu_send"
+        android:hint="@string/produtoEditTextForm"
         android:minHeight="48dp"
-        />
+        android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/quantidadeEditTextForm"
         style="@style/Edit_Text"
-        android:textColor="@color/black"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/produtoEditTextForm"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="10dp"
+        android:drawableEnd="@android:drawable/ic_menu_edit"
         android:hint="Quantidade"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColor="@color/black" />
 
-        <Button
-            android:id="@+id/cadastrarButtonForm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/quantidadeEditTextForm"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/blue"
-            android:text="@string/cadastrarButtonForm"
-            android:textSize="17dp"
-            android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/cadastrarButtonForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantidadeEditTextForm"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/cadastrarButtonForm"
+        android:drawableEnd="@android:drawable/ic_menu_add"
+        android:textSize="17dp"
+        android:textColor="@color/black"/>
 
-        <Button
-            android:id="@+id/mostrarButtonForm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/cadastrarButtonForm"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/blue"
-            android:layout_marginBottom="16dp"
-            android:text="@string/mostrarButtonForm"
-            android:textSize="17dp"
-            android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/mostrarButtonForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cadastrarButtonForm"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="16dp"
+        android:text="@string/mostrarButtonForm"
+        android:drawableEnd="@android:drawable/ic_menu_search"
+        android:textSize="17dp"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/resultadoTextViewForm"
@@ -97,9 +101,9 @@
         android:layout_below="@id/mostrarButtonForm"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="-6dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/resultadoTextViewForm"
         android:textColor="@color/black" />
-    </RelativeLayout>
+</RelativeLayout>

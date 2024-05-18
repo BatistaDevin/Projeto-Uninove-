@@ -5,83 +5,84 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/ro"
 
     tools:context=".FormeCadastro">
 
-  <TextView
-      android:id="@+id/title_cadastrese"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/title_cadastro"
-      android:textColor="@color/white"
-      android:textSize="50sp"
-      android:textStyle="bold"
-      android:layout_marginTop="100dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      />
+    <TextView
+        android:id="@+id/title_cadastrese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_cadastro"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
-<View
-    android:id="@+id/containerComponentes"
-    style="@style/containerComponents"
-  app:layout_constraintTop_toBottomOf="@id/title_cadastrese"
-  app:layout_constraintStart_toStartOf="parent"
-  app:layout_constraintEnd_toEndOf="parent" />
+    <View
+        android:id="@+id/containerComponentes"
+        style="@style/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/title_cadastrese"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-  <EditText
-      android:id="@+id/edit_nome"
-      style="@style/Edit_Text"
-      android:layout_marginTop="12dp"
-      android:autofillHints=""
-      android:hint="@string/nome"
-      android:inputType="text"
-      android:textColor="@color/black"
-      app:layout_constraintEnd_toEndOf="@id/containerComponentes"
-      app:layout_constraintStart_toStartOf="@id/containerComponentes"
-      app:layout_constraintTop_toTopOf="@id/containerComponentes" />
+    <EditText
+        android:id="@+id/edit_nome"
+        style="@style/Edit_Text"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:hint="@string/nome"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentes"
+        app:layout_constraintStart_toStartOf="@id/containerComponentes"
+        app:layout_constraintTop_toTopOf="@id/containerComponentes" />
 
-  <EditText
-      android:id="@+id/edit_email"
-      style="@style/Edit_Text"
-      android:hint="@string/e_mail"
-      android:textColor="@color/black"
-      android:inputType="textWebEmailAddress"
-      android:drawableEnd="@drawable/ic_email"
-      app:layout_constraintTop_toBottomOf="@id/edit_nome"
-      app:layout_constraintStart_toStartOf="@id/containerComponentes"
-      app:layout_constraintEnd_toEndOf="@id/containerComponentes"
-      android:autofillHints="" />
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:hint="@string/e_mail"
+        android:textColor="@color/black"
+        android:inputType="textWebEmailAddress"
+        android:drawableEnd="@drawable/ic_email"
+        app:layout_constraintTop_toBottomOf="@id/edit_nome"
+        app:layout_constraintStart_toStartOf="@id/containerComponentes"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentes"
+        android:autofillHints="" />
 
-        <EditText
-      android:id="@+id/edit_senha"
-      style="@style/Edit_Text"
-      android:hint="@string/senha"
-      android:textColor="@color/black"
-      android:inputType="numberPassword"
-      android:drawableRight="@drawable/ic_eye"
-      app:layout_constraintTop_toBottomOf="@id/edit_email"
-      app:layout_constraintStart_toStartOf="@id/containerComponentes"
-      app:layout_constraintEnd_toEndOf="@id/containerComponentes"
-      tools:ignore="RtlHardcoded"
-      android:autofillHints="" />
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_Text"
+        android:hint="@string/senha"
+        android:textColor="@color/black"
+        android:inputType="numberPassword"
+        android:drawableRight="@drawable/ic_eye"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        app:layout_constraintStart_toStartOf="@id/containerComponentes"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentes"
+        tools:ignore="RtlHardcoded"
+        android:autofillHints="" />
 
-  <Button
-      android:id="@+id/bt_cadastrar"
-      android:layout_width="229dp"
-      android:layout_height="67dp"
-      android:layout_marginTop="36dp"
-      android:backgroundTint="@color/blue_cl"
-      android:padding="20dp"
-      android:text="@string/bt_cadastrar"
-      android:textAllCaps="false"
-      android:textColor="@color/black"
-      android:textSize="18sp"
-      android:textStyle="bold"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/containerComponentes" />
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="229dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/roxo"
+        android:padding="20dp"
+        android:text="@string/bt_cadastrar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponentes" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
