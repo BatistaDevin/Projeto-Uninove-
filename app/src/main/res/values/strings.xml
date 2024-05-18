@@ -31,4 +31,6 @@
     <string name="cancelar">Cancelar</string>
     <string name="resultadoTextViewForm">Resultado</string>
     <string name="produtoEditTextForm">Nome do produto</string>
+    <string name="text_photo">Coloque sua foto</string>
+
 </resources>

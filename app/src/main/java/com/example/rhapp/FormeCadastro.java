@@ -23,8 +23,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-import kotlin.collections.UCollectionsKt;
-
 public class FormeCadastro extends AppCompatActivity {
 
     private EditText edit_nome,edit_email,edit_senha;
@@ -49,6 +47,7 @@ public class FormeCadastro extends AppCompatActivity {
 
                 if (nome.isEmpty() || email.isEmpty() || senha.isEmpty()) {
                     Snackbar snackbar = Snackbar.make(v, mensagens[0], Snackbar.LENGTH_SHORT);
+                    snackbar.setAnchorView(findViewById(R.id.title_cadastrese));
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
@@ -72,7 +71,8 @@ public class FormeCadastro extends AppCompatActivity {
 
                     SalvarDadosUsuario();
 
-                    Snackbar snackbar = Snackbar.make(v, mensagens[1], Snackbar.LENGTH_SHORT);
+                    Snackbar snackbar = Snackbar.make(v, mensagens[1], Snackbar.LENGTH_LONG);
+                    snackbar.setAnchorView(findViewById(R.id.title_cadastrese));
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
